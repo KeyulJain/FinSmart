@@ -5,9 +5,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* body {
-
-} */
+body {
+    overflow-x: hidden;
+} 
 .login{
     background: rgba(0,0,0,.1);
     width: 100%;
@@ -22,13 +22,13 @@
 .navbar-brand {
     font-size: larger;
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
     margin: 0 30px 0 30px;
 }
 .nav-link {
-    font-size: larger;
+    font-size: 19px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
 }
 #carouselExampleIndicators{
     width: 95%;
@@ -199,6 +199,28 @@ label {
   }
   .google-btn:active {
     background: #1669F2;
+  } 
+  main {      
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .lft-cont, .rgt-cont{
+    float: left;    
+    padding: 30px;
+  }
+  .lft-cont{
+      width: 16%;
+  }
+  .rgt-cont {
+      width: 84%;
+  }
+  .linking{
+      text-decoration: none;
+  } 
+  ul{
+      position: relative;
+      left: 25px;
   }
 @media only screen and (max-width: 768px){
     .card, .card-line {
@@ -207,5 +229,18 @@ label {
         padding: 10px;
         margin: 10px;
         border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .login {        
+        background: rgba(0,0,0,.1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;        
     }
 }
