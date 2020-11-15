@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* body {
+
+} */
+.login{
+    background: rgba(0,0,0,.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.navbar-brand {
+    font-size: larger;
+    color: #fff;
+    font-weight: 800;
+    margin: 0 30px 0 30px;
+}
+.nav-link {
+    font-size: larger;
+    color: #fff;
+    font-weight: 600;
+}
+#carouselExampleIndicators{
+    width: 95%;
+    padding: 20px 10px;
+    margin: auto;
+    border-radius: 25px;
+}
+.card, .card-line {
+    display: flex;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.full{
+    height: 100%;
+    width: 100%;    
+    background-position: center;
+    background-size: cover;  
+    position: absolute; 
+}
+.form-box{
+    height: 730px;
+    width: 380px;
+    position: relative;    
+    margin: 6% auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;   
+    box-shadow: 4px 7px 9px #888888; 
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 3px #7df762;
+    border-radius: 30px;
+    bottom: 30px;
+    padding: 1px;
+    top: 20px;
+}
+.cross{
+    height: 16px;
+    width: auto;
+    display: flex;
+    float: right;
+    right: 40px;
+    top: 50px;
+    margin: 20px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #32e3dd, #6eff26);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+label {
+    font-size: 19px;
+}
+.input-type{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+ input[type=email], input[type=password] {
+    width: auto;
+    padding: 10px 0px;
+    margin: 8px 0px;    
+    border: 0;
+    border-bottom: 1px solid #999;   
+    width: 100%; 
+    outline: none;
+    background: transparent;
+    font-size: 17px;
+}   
+.forgot-password{
+    display: flex;
+    float: right;
+    padding: 20px;  
+    padding-top: 5px;  
+} 
+.forgot-password a{
+    text-decoration: none;
+    font-size: 13px;
+    color: grey;
+}
+.submit{
+    width: 220px;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(to right, #32e3dd, #6eff26);
+    font-size: 18px;
+}
+#login{
+    left: 50px;
+}
+#signup{
+    left: 450px;
+}
+.or{
+    text-align: center;
+    font-size: 19px;
+    padding: 20px;
+    margin: auto;
+}
+.google-btn {
+  width: 220px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 30px;
+  cursor: pointer;
+}
+.google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .google-icon {
+    position: absolute;
+    margin: 20%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+    position: relative;
+    left: 5px;
+    cursor: pointer;
+  }
+  .google-btn:hover {
+    box-shadow: 0 0 6px #4285f4;
+  }
+  .google-btn:active {
+    background: #1669F2;
+  }
+@media only screen and (max-width: 768px){
+    .card, .card-line {
+        display: flex;
+        float: inherit;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+}
