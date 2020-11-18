@@ -7,6 +7,7 @@
 }
 body {
     overflow-x: hidden;
+    background-color: #ebfffa;    
 } 
 .login{
     background: rgba(0,0,0,.1);
@@ -35,6 +36,10 @@ body {
     padding: 20px 10px;
     margin: auto;
     border-radius: 25px;
+}
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.1rem solid #777;
 }
 .card, .card-line {
     display: flex;
@@ -222,6 +227,20 @@ label {
       position: relative;
       left: 25px;
   }
+  .footer-1 {
+  text-align: center;
+  padding: 3px;
+  background-color: #3d3d3d;
+  color: white;
+  width: 100%;
+  display: flex;
+  float: inline-end;
+} 
+.footer-copyright {
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
 @media only screen and (max-width: 768px){
     .card, .card-line {
         display: flex;
