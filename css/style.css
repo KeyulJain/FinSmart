@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -227,6 +228,76 @@ label {
       position: relative;
       left: 25px;
   }
+  .smt-cntr{
+    margin: 2em auto;
+    padding: 1.5em;
+  }
+  .text-smart{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+  }
+  .text-smart h2{ 
+    font-family: 'Merriweather', serif;
+  }
+  h1, h2, h3, h4, h5, h6, p, li {
+      font-family: 'Merriweather', serif;
+  }
+  p {
+      font-weight: 500;
+  }
+  .card-body{
+      text-align: center;
+  }
+  .tax-free1{
+      width: 70%;
+      height: auto;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border-radius: 50px;
+background: #ffd6d6;
+box-shadow:  20px 20px 100px #d9b6b6, 
+             -20px -20px 100px #fff6f6;
+  }
+  .taxfree-1{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 10px;
+  }
+  .taxfree2-cnt{
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+      padding: 20px;
+  }
+  
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;    
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    width: 70%;    
+    padding: 20px;
+    margin: auto;
+}
+table, tr, th, td{
+    border: 1px solid #000;
+    padding: 2px;
+}
   .footer-1 {
   text-align: center;
   padding: 3px;
@@ -235,11 +306,17 @@ label {
   width: 100%;
   display: flex;
   float: inline-end;
+  position: relative;
+  bottom: -65px;
 } 
+.footer-1 h3{
+    font-family: 'Merriweather', serif;
+}
 .footer-copyright {
     text-align: center;
     padding: 5px;
     margin: auto;
+    font-family: 'Merriweather', serif;
 }
 @media only screen and (max-width: 768px){
     .card, .card-line {
