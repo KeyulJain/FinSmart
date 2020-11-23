@@ -1,4 +1,4 @@
-var firebaseConfig = {    
+var firebaseConfig = {
     apiKey: "AIzaSyBsPP7x8HlPmh1Sy0OHy-7oT66NfCBBK3A",
     authDomain: "finsmart-1c2dd.firebaseapp.com",
     databaseURL: "https://finsmart-1c2dd.firebaseio.com",
@@ -13,12 +13,32 @@ firebase.initializeApp(firebaseConfig);
 //auth and firestore references
 const auth = firebase.auth();
 const db = firebase.firestore();
-const button = document.querySelector(".submit");
-button.addEventListener('click', (e) => {
+const signUpButton = document.querySelector("#submitSignUp");
+const signInButton = document.querySelector("#submitSignIn");
+
+signUpButton.addEventListener('click', (e) => {
+    console.log('hello');
     e.preventDefault();
-    const email = document.querySelector("#e-mail").value;
-    const password = document.querySelector("#pass-word").value;
+    const email = document.querySelector("#emailSignUp").value;
+    const password = document.querySelector("#passwordSignUp").value;
     console.log(email, password);
+    //auth.createUserWithEmailAndPassword
+    auth.createUserWithEmailAndPassword(email, password).then(() => console.log("done,bitch!")).catch(function(error) {
+        // Handle Errors here.
+        console.log(error);
+        var errorCode = error.code;
+        var errorMessage = error.message;
+    });
+})
+
+signInButton.addEventListener('click', (e) => {
+    console.log('hello');
+    e.preventDefault();
+    const email = document.querySelector("#emailSignIn").value;
+    const password = document.querySelector("#passwordSignIn").value;
+    console.log(email, password, 'yo');
+    //auth.createUserWithEmailAndPassword
+
     auth.signInWithEmailAndPassword(email, password).then(() => console.log("done,bitch!")).catch(function(error) {
         // Handle Errors here.
         console.log(error);
