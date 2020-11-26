@@ -39,7 +39,10 @@ signInButton.addEventListener('click', (e) => {
     console.log(email, password, 'yo');
     //auth.createUserWithEmailAndPassword
 
-    auth.signInWithEmailAndPassword(email, password).then(() => console.log("done,bitch!")).catch(function(error) {
+    auth.signInWithEmailAndPassword(email, password).then(() => {
+        console.log("done!")
+        alert('Welcome!')
+    }).catch(function(error) {
         // Handle Errors here.
         console.log(error);
         var errorCode = error.code;
